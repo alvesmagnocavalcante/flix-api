@@ -1,0 +1,88 @@
+Aplicação de Avaliação de Filmes
+
+Esta é uma aplicação de avaliação de filmes construída com Django e Django Rest Framework. A aplicação permite aos usuários criar, visualizar, atualizar e deletar filmes, gêneros, atores e avaliações de filmes. Além disso, fornece estatísticas sobre os filmes cadastrados e as avaliações realizadas.
+
+Funcionalidades Principais:
+
+1. Filmes:
+   - Lista todos os filmes cadastrados.
+   - Permite criar novos filmes.
+   - Permite visualizar detalhes de um filme específico.
+   - Permite atualizar informações de um filme.
+   - Permite deletar um filme.
+
+2. Gêneros:
+   - Lista todos os gêneros cadastrados.
+   - Permite criar novos gêneros.
+   - Permite visualizar detalhes de um gênero específico.
+   - Permite atualizar informações de um gênero.
+   - Permite deletar um gênero.
+
+3. Atores:
+   - Lista todos os atores cadastrados.
+   - Permite criar novos atores.
+   - Permite visualizar detalhes de um ator específico.
+   - Permite atualizar informações de um ator.
+   - Permite deletar um ator.
+
+4. Avaliações de Filmes:
+   - Lista todas as avaliações de filmes cadastradas.
+   - Permite criar novas avaliações de filmes.
+   - Permite visualizar detalhes de uma avaliação de filme específica.
+   - Permite atualizar informações de uma avaliação de filme.
+   - Permite deletar uma avaliação de filme específica.
+
+5. Estatísticas:
+   - Fornece estatísticas sobre os filmes cadastrados, incluindo total de filmes, número de filmes por gênero e média de estrelas das avaliações.
+
+Endpoints da API:
+
+1. Filmes:
+   - GET /api/movies/: Lista todos os filmes e permite criar um novo filme.
+   - GET /api/movies/<id>/: Retorna detalhes de um filme específico.
+   - PUT /api/movies/<id>/: Atualiza informações de um filme específico.
+   - DELETE /api/movies/<id>/: Deleta um filme específico.
+
+2. Gêneros:
+   - GET /api/genres/: Lista todos os gêneros e permite criar um novo gênero.
+   - GET /api/genres/<id>/: Retorna detalhes de um gênero específico.
+   - PUT /api/genres/<id>/: Atualiza informações de um gênero específico.
+   - DELETE /api/genres/<id>/: Deleta um gênero específico.
+
+3. Atores:
+   - GET /api/actors/: Lista todos os atores e permite criar um novo ator.
+   - GET /api/actors/<id>/: Retorna detalhes de um ator específico.
+   - PUT /api/actors/<id>/: Atualiza informações de um ator específico.
+   - DELETE /api/actors/<id>/: Deleta um ator específico.
+
+4. Avaliações de Filmes:
+   - GET /api/reviews/: Lista todas as avaliações de filmes e permite criar uma nova avaliação.
+   - GET /api/reviews/<id>/: Retorna detalhes de uma avaliação de filme específica.
+   - PUT /api/reviews/<id>/: Atualiza informações de uma avaliação de filme específica.
+   - DELETE /api/reviews/<id>/: Deleta uma avaliação de filme específica.
+
+5. Estatísticas:
+   - GET /api/moviestats/: Fornece estatísticas sobre os filmes cadastrados.
+
+Requisitos e Dependências:
+
+- Python 3.x
+- Django
+- Django Rest Framework
+- PostgreSQL (ou outro banco de dados suportado pelo Django)
+
+Como Executar o Projeto:
+
+1. Clone o repositório para sua máquina local.
+2. Instale as dependências utilizando o pip:
+   pip install -r requirements.txt
+3. Configure as variáveis de ambiente e o banco de dados no arquivo settings.py.
+4. Execute as migrações do banco de dados:
+   python manage.py migrate
+5. Inicie o servidor de desenvolvimento:
+   python manage.py runserver
+6. Acesse a aplicação através do navegador web em http://localhost:8000.
+
+Licença:
+
+Este projeto está licenciado sob a Licença MIT.
