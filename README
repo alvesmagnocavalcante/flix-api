@@ -82,7 +82,3 @@ Como Executar o Projeto:
 5. Inicie o servidor de desenvolvimento:
    python manage.py runserver
 6. Acesse a aplicação através do navegador web em http://localhost:8000.
-
-Licença:
-
-Este projeto está licenciado sob a Licença MIT.
