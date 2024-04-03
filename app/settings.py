@@ -60,6 +60,10 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
+CORS_ALLOWED_ORIGINS = [
+    "https://flix-api-u9g4.onrender.com",  # Adicione sua origem permitida aqui
+]
+
 ROOT_URLCONF = 'app.urls'
 
 TEMPLATES = [
